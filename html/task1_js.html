@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Task 1</title>
+</head>
+<body>
+
+<label for="numberInput">Enter a number: </label>
+<input type="number" id="numberInput">
+
+<p id="reversedNumber"></p>
+
+<script>
+  const numberInput = document.getElementById('numberInput');
+  const reversedNumberElement = document.getElementById('reversedNumber');
+
+  numberInput.addEventListener('input', () => {
+    const inputValue = parseFloat(numberInput.value);
+    const reversedNumber = parseFloat(inputValue.toString().split('').reverse().join(''));
+    if (!isNaN(reversedNumber)) {
+      reversedNumberElement.innerText = `Reversed number: ${reversedNumber}`;
+    } else {
+      reversedNumberElement.innerText = 'Please enter a valid number.';
+    }
+  });
+</script>
+
+</body>
+</html>

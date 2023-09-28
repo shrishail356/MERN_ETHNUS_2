@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Task 4</title>
+</head>
+<body>
+<div>
+    <button onclick="showDate()">Show Date</button>
+</div>
+<p id="dateDisplay"></p>
+<br/>
+
+<div>
+    <button onclick="showTime()">Show Time</button>
+</div>
+<p id="timeDisplay"></p>
+
+<script>
+  function showDate() {
+    const currentDateTime = new Date();
+    const day = currentDateTime.getDate();
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const month = monthNames[currentDateTime.getMonth()];
+    const year = currentDateTime.getFullYear();
+
+    const formattedDate = `${day}/${month}/${year}`;
+    document.getElementById('dateDisplay').innerText = `${formattedDate}`;
+  }
+
+  function showTime() {
+    const options = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZoneName: 'short' };
+    const currentIST = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata', ...options });
+    document.getElementById('timeDisplay').innerText = `${currentIST}`;
+  }
+</script>
+
+</body>
+</html>

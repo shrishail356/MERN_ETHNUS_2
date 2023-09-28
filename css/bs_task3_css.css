@@ -1,0 +1,39 @@
+p{
+    margin:auto 15rem 5rem 15rem;
+    text-align: center;
+    
+}
+h1{
+    text-align: center;
+}
+ul,li{
+    list-style: none;
+}
+/* col{
+    margin:100px;
+} */
+a.btn.btn-primary{
+    width: 18rem;
+}
+a.btn.btn-primary:hover{
+    background-color: azure;
+    color: rgb(0, 81, 255);
+}
+.container{
+    margin:auto 10rem 10rem 5rem;}
+    
+.foot{
+    border-top: 1px solid rgba(73, 73, 73, 0.362);
+    background-color:rgba(228, 228, 228, 0.362) ;
+    width: auto;
+    padding: 2rem 0rem 0rem 0rem;
+    margin: 2rem 0rem 0rem 0rem;
+   
+    
+
+}
+.link-underline-opacity-25 {
+    --bs-link-underline-opacity: 0;
+}
+
+

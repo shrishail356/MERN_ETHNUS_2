@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Task_6</title>
+
+
+    <style>
+
+      * 
+      {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+      
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .center {
+        width: 350px;
+        border: 1px solid rgb(195, 195, 195);
+        border-radius: 3px;
+        background-color: rgb(240, 240, 240);
+        height: 300px;
+
+      }
+      .center .header {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 17px;
+      }
+      
+      .center .inputElement {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 37px 0px 37px;
+      }
+      
+      .inputElement .inputText {
+        padding: 8px;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+      .inputText:focus {
+        outline: gray;
+      }
+      
+      .inputButton {
+        background-color: rgb(5, 117, 223);
+        color: white;
+        font-size: 12px;
+        padding: 8px;
+        border-radius: 3px;
+        margin-bottom: 12px;
+        margin-top: 12px;
+        border: none;
+        cursor: pointer;
+      }
+      .line {
+        display: flex;
+        margin-top: 6px;
+      }
+      .arrow {
+        background-color: gray;
+        height: 1px;
+        width: 140px;
+      }
+      .content {
+        color: gray;
+        margin-top: -7px;
+        margin-left: 4px;
+        margin-right: 4px;
+      }
+     
+     
+      .forgetPassword {
+        margin: auto;
+        color: rgb(101, 178, 250);
+        margin-bottom: 25px;
+      }
+   
+
+
+    </style>
+
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+        <div class="header">
+          <p style="font-size: 30px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style:italic"> Instagram </p>
+        </div>
+        <div class="inputElement">
+          <input type="text" placeholder="Username" class="inputText" id="username"/>
+          <input type="password" placeholder="Password" class="inputText" id="password"/>
+          <input type="submit" value="Log in" class="inputButton" onclick="validateLogin()"/>
+        
+          <div>
+            <br>
+            <input type="checkbox" id="C" name="C" value="C"/>              
+            <label>Remember me</label>     
+          </div>
+
+          <a style="margin-left: 200px; margin-top: -15px; color:blue" href="#"><p style="font-size: 12px;"> ForgotPassword? </p></a>
+        </div>
+      </div>
+
+      <br>
+
+      <div>
+        <p>Don't have an account! <a style="color: blue;" href="#">Sign up here</a></p>
+      </div>
+    </div>
+
+    <script>
+        function validateLogin() {
+          const username = document.getElementById('username').value;
+          const password = document.getElementById('password').value;
+    
+          if (!username || !password) {
+            alert('Please enter both username and password.');
+          } else {
+            
+            alert(`Logged in as ${username}`);
+          }
+        }
+      </script>
+  </body>
+</html>

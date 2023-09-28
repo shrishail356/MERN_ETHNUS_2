@@ -1,0 +1,52 @@
+#containercards{
+    display: flex;
+    border-top: 1px solid rgba(103, 103, 103, 0.794);
+margin-top: 5rem;
+padding-top: 0rem;
+}
+.card{
+    margin: 2rem 4rem 4rem 4rem ;
+    height: 30rem;
+}
+h5{
+    top:0;
+    left: 0;
+    z-index: 3;
+}
+.outer{
+    position: relative;
+    height: auto;
+    width: auto;
+}
+.outer img,.inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.outer:hover .inner{
+    display:block;
+}
+
+
+.linkbtn{
+    padding-top: 2rem;
+    border-top: 1px solid rgba(149, 149, 149, 0.61);
+}
+a{
+    font-size: large;
+    margin-left: 1rem;
+    color: rgb(228, 176, 5);
+    text-decoration:none;
+}
+a:hover{
+    margin-left: 1rem;
+    color: rgb(78, 60, 0);
+    text-decoration:none;
+}

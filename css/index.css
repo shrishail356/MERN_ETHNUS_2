@@ -1,0 +1,84 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 700;
+    color: #2C3E50;
+    margin-top: 5%;
+}
+
+p.lead {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    color: #7F8C8D;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-custom {
+    background-color: #3498DB;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+    margin: 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btn-custom:hover {
+    background-color: #2980B9;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.task-title {
+    margin: 40px 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #34495E;
+}
+
+.task-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.task-section:not(:last-child) {
+    margin-bottom: 40px;
+}
+#h2{
+    color: black;
+    margin-top: 30px;
+    font-size: 24px;
+}
+img {
+    width: 40px;
+    height: 40px;
+    margin-right: 25px; 
+    transition: transform 0.3s; 
+}
+
+a:hover img {
+    transform: scale(1.1); 
+}
+
+div.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
